@@ -1,8 +1,16 @@
 # Q
 
-_A tool for building server environments_
+_A tool for building Ubuntu environments with shell scripts_
 
-Q is starting life as Ubuntu and shell scripts.
+## Quickstart
+
+Clone the Q repo and initialize the VM.
+
+```
+$ git clone https://github.com/qntfy/q.git
+$ cd q
+$ vagrant up
+```
 
 ## Docs
 
