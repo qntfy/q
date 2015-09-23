@@ -2,7 +2,7 @@
 
 Installers are just shell scripts for instaling something. You call them with `sudo`.
 
-## Example: Python
+## Examples
 
 Installing Python will install python and apply our opinions on what else is needed, like virtualenv.
 
@@ -10,10 +10,8 @@ Installing Python will install python and apply our opinions on what else is nee
 $ sudo q/installers/python.sh
 ```
 
-
-
-This is how you install the Postgres track.
+Installing MongoDB is basically the same
 
 ```
-$ sudo boombox/tracks/postgres.sh
+$ sudo q/installers/mongodb.sh
 ```
