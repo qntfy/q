@@ -2,13 +2,6 @@
 ### Q Env
 ###
 
-### .bashrc
-if [ -n "$BASH_VERSION" ]; then
-    if [ -f "$HOME/.bashrc" ]; then
-        . "$HOME/.bashrc"
-    fi
-fi
-
 ### Configure prompt
 if [ $USER = "root" ]; then
 	PS_COLOR="31m";
