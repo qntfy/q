@@ -7,4 +7,4 @@ Q is starting life as Ubuntu and shell scripts.
 ## Docs
 
 * [Using Q With Vagrant](docs/VAGRANT.md)
-* [Installing Things](docs/THINGS.md)
+* [Installing Things](docs/INSTALLERS.md)
