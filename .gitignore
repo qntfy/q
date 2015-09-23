@@ -1,0 +1,7 @@
+# Vagrant stuff
+.vagrant
+
+# Mac stuff
+.DS_Store
+*~
+

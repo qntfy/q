@@ -1,0 +1,35 @@
+###
+### Q Env
+###
+
+### .bashrc
+if [ -n "$BASH_VERSION" ]; then
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
+fi
+
+### Configure prompt
+if [ $USER = "root" ]; then
+	PS_COLOR="31m";
+else
+	PS_COLOR="32m";
+fi
+export PS1="\n[01;$PS_COLOR\u@\h[0m : \t : [01;34m\w[0m\n\$ "
+
+### Configure tmp dir in home dir
+if [ ! -d "$HOME/.tmp" ]; then
+   mkdir "$HOME/.tmp";
+fi
+export TMPDIR="$HOME/.tmp";
+
+### Env defaults
+export EDITOR="vi";
+export PAGER="less";
+
+### aliases
+alias ls="ls -F --color";
+alias rm="rm -i";
+alias cp="cp -i";
+alias mv="mv -i";
+alias sudoo="sudo /bin/bash -l";
