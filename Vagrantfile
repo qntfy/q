@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
       end
 
       # Put our .profile in place
-      config.vm.provision :shell, :inline => "echo -e \"\n### Vagrant \n. /vagrant/env/dot-profile\" >> /home/vagrant/.profile"
+      config.vm.provision :shell, :inline => "echo -e \"\n# Q env \n. /vagrant/env/dot-profile\" >> /home/vagrant/.profile"
 
       # Update and upgrade the machine to latest packages
       config.vm.provision :shell, :inline => "/vagrant/installers/provision.sh"
