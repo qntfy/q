@@ -2,13 +2,9 @@ apt-get -y install \
 	python-dev \
 	python-pip \
 	python-virtualenv \
-	virtualenvwrapper
+	virtualenvwrapper \
+	libffi-dev \
+	libssl-dev
 
-echo ""
-echo "Q: please add the following lines to $HOME/.profile"
-echo ""
-echo "# Virtualenv"
-echo "export WORKON_HOME=\"$HOME/.virtualenvs\""
-echo ". /usr/local/bin/virtualenvwrapper.sh"
-echo ""
-
+echo "export WORKON_HOME=\"$HOME/.virtualenvs\"" >> ~/.profile
+echo ". /usr/share/virtualenvwrapper/virtualenvwrapper.sh" >> ~/.profile
