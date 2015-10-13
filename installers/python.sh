@@ -4,7 +4,16 @@ apt-get -y install \
 	python-virtualenv \
 	virtualenvwrapper \
 	libffi-dev \
-	libssl-dev
+	libssl-dev \
+  libyaml-dev
 
+echo ""
+echo "# virtualenv & virtualenvwrapper"
 echo "export WORKON_HOME=\"$HOME/.virtualenvs\"" >> ~/.profile
 echo ". /usr/share/virtualenvwrapper/virtualenvwrapper.sh" >> ~/.profile
+
+echo ""
+echo "HEY! in your shell, type this:
+echo ""
+echo "    $ . ~/.profile"
+echo ""
